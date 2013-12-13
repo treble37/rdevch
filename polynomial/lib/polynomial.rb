@@ -2,7 +2,7 @@ class Polynomial
   attr_accessor :coeffs
 
   def initialize(elements = [])
-    raise ArgumentError, /Two or more coefficients are required/ unless elements.length > 1
+    raise ArgumentError, "Two or more coefficients are required" unless elements.length > 1
     @coeffs = elements.reverse
   end
 
